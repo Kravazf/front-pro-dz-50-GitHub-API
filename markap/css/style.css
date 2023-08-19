@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#main {
+  padding: 50px 0px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+  
+#username {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+  
+#searchBtn,
+#randomBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+#searchBtn {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+  
+#randomBtn {
+  background-color: #28a745;
+  color: white;
+  margin-left: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.user-profile,
+.repositories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: solid 1px slateblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.bio {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.location,
+.followers {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.repo-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  width: 40%;
+}
+
+.repo-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.repo-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.error {
+  color:white;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.info-container {
+  width: 40%;
+  margin-top: 20px;
+}
+  
+.info-item {
+  margin-bottom: 10px;
+}
+  
+.info-header {
+  font-weight: bold;
+}
+  
+.info-text {
+  text-align: left;
+}
+
+@keyframes myAnimation {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.result-container {
+  animation-name: myAnimation;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
